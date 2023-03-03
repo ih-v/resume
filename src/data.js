@@ -1,6 +1,11 @@
 export const data = {
   fullName: "Ihor Vashchenko",
   position: "FRONT-END WEB DEVELOPER",
+  contacts: {
+    email: "ih.vashchenko@gmail.com",
+    tel: "+38 (095) 550-25-22",
+    address: "Ukraine, Kyiv",
+  },
   summary: [
     "Self-motivated and hard-working individual with strong analytical skills desires to work as a Front-end Web Developer",
     "Bringing 1year non-comercial programming experience in JavaScript, HTML, CSS/SCSS and pro iciency in relevant packages such as React, Redux toolkit, Next",
@@ -8,9 +13,9 @@ export const data = {
   ],
   skills: [
     "React",
-    "Redux",
-    "toolkit",
+    "Redux toolkit",
     "JavaScript (+ES6-11)",
+    "TypeScript",
     "HTML",
     "CSS",
     "SCSS",

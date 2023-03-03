@@ -1,5 +1,4 @@
-import "./App.css";
-import photo from "../assets/photo.jpg";
+import photo from "../assets/photo.png";
 import { data } from "../data";
 
 import Head from "./Head";
@@ -14,17 +13,19 @@ import Languages from "./Languages";
 
 function App() {
   return (
-    <>
-      <Head fullName={data.fullName} position={data.position} photo={photo} />
-      <Contacts data={data.contacts} />
-      <Summary items={data.summary} />
-      <Skills items={data.skills} />
-      <KeyProjects items={data.keyProjects} />
-      <WorkExperience items={data.workExperience} />
-      <Courses items={data.courses} />
-      <Education items={data.education} />
-      <Languages items={data.languages} />
-    </>
+    <main className="layout">
+      <div className="content">
+        <Head fullName={data.fullName} position={data.position} photo={photo} />
+        <Contacts data={data.contacts} />
+        <Summary items={data.summary} />
+        <Skills items={data.skills} />
+        <KeyProjects items={data.keyProjects} />
+        <WorkExperience items={data.workExperience} />
+        <Courses items={data.courses} />
+        <Education items={data.education} />
+        <Languages items={data.languages} />
+      </div>
+    </main>
   );
 }
 

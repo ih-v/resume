@@ -1,10 +1,10 @@
+import Section from "./Section";
+
 const Languages = ({ items }) => {
   return (
-    <>
-      {items.map((item, i) => (
-        <div key={i}>{item}</div>
-      ))}
-    </>
+    <Section name="Languages" type="rowText">
+      {items.join(", ")}
+    </Section>
   );
 };
 

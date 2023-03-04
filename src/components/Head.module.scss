@@ -1,0 +1,51 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--decoration-color);
+  padding: 2rem 3rem 0 3rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--contrast-font-color);
+  font-family: var(--secondary-font);
+  &__headers {
+    &__name {
+      font-size: 2.5rem;
+    }
+    &__position {
+      font-size: 1.4rem;
+    }
+    &__underline {
+      width: 100%;
+      border: 0.03125rem solid var(--contrast-font-color);
+    }
+  }
+  &__contacts {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
+}
+
+.photo-container {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 0.3125rem solid var(--contrast-font-color);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--contrast-font-color);
+}

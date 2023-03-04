@@ -1,10 +1,12 @@
+import Section from "./Section";
+
 const Skills = ({ items }) => {
   return (
-    <div>
+    <Section name="Skills" type="rowBordered">
       {items.map((item, i) => (
         <div key={i}>{item}</div>
       ))}
-    </div>
+    </Section>
   );
 };
 

@@ -3,7 +3,7 @@ export const data = {
   position: "FRONT-END WEB DEVELOPER",
   contacts: {
     email: "ih.vashchenko@gmail.com",
-    tel: "+38 (095) 550-25-22",
+    tel: "+38 (063) 550-25-22",
     address: "Ukraine, Kyiv",
     gitHub: "",
     site: "",

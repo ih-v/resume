@@ -1,1 +1,1 @@
-Project deployed on https://github.com/ih-v/theming
+Project deployed on https://ih-v.github.io/resume/

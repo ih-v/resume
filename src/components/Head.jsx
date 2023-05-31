@@ -33,13 +33,13 @@ const Head = ({ fullName, position, photo, contacts }) => {
           {contacts?.gitHub && (
             <div>
               <BsGithub />
-              <div>{contacts.gitHub}</div>
+              <a href={contacts.gitHub}>{contacts.gitHub}</a>
             </div>
           )}
           {contacts?.site && (
             <div>
               <BsBrowserChrome />
-              <div>{contacts.site}</div>
+              <a href={contacts.site}>{contacts.site}</a>
             </div>
           )}
         </div>

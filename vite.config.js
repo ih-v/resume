@@ -1,18 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ command, mode, ssrBuild }) => {
+export default defineConfig(({ command }) => {
   if (command === "serve") {
-    console.log(command, mode, ssrBuild);
     return {
-      // dev specific config
       plugins: [react()],
     };
   } else {
-    // command === 'build'
-    console.log(command, mode, ssrBuild);
     return {
-      // build specific config
       plugins: [react()],
       base: "/resume/",
     };

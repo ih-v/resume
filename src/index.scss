@@ -15,7 +15,7 @@ body {
   --contrast-font-color: #fff;
   --main-font: "Times New Roman", Times, serif;
   --secondary-font: "Cambria";
-  line-height: 1.5;
+  line-height: 1.4;
   &,
   html {
     height: 100%;
@@ -46,6 +46,12 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+a,
+a:hover,
+a:visited {
+  color: var(--contrast-font-color);
 }
 
 #root {

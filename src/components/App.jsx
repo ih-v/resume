@@ -18,6 +18,7 @@ function App() {
   const handleDownload = () => {
     html2canvas(document.querySelector("#capture"), {
       allowTaint: true,
+      scale: 3,
     }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF({

@@ -11,7 +11,8 @@ body {
   --root-bg-color: #cec6c69f;
   --content-bg-color: #f7f7f7;
   --decoration-color: #6967ba;
-  --main-font-color: #484848;
+  --main-font-color: #262525;
+  --muted-font-color: #262525aa;
   --contrast-font-color: #fff;
   --main-font: "Times New Roman", Times, serif;
   --secondary-font: "Cambria";
@@ -72,6 +73,7 @@ a:visited {
 
 .content {
   background-color: var(--content-bg-color);
+  height: 1272px;
 }
 
 .download-button {

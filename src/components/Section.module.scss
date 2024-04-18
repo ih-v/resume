@@ -1,10 +1,7 @@
 .section {
-  padding: 0.7rem 2rem;
+  padding: 0.9rem 2rem;
   display: flex;
-  gap: 0.8rem;
-  &:last-child {
-    padding-bottom: 2rem;
-  }
+  gap: 1rem;
   &:not(:last-child) {
     border-bottom: 0.2rem double var(--decoration-color);
   }
@@ -32,6 +29,9 @@
         padding: 0.25rem;
         border: 0.1rem solid var(--decoration-color);
         border-radius: 0.3rem;
+        flex-shrink: 1;
+        flex-grow: 1;
+        text-align: center;
       }
     }
     &__block-column {
@@ -56,7 +56,9 @@
           }
         }
         & > div:nth-child(2) {
-          text-decoration: underline;
+          font-family: var(--secondary-font);
+          color: var(--muted-font-color);
+          font-weight: bold;
         }
       }
     }

@@ -3,53 +3,61 @@ export const data = {
   position: "FRONT-END WEB DEVELOPER",
   contacts: {
     email: "ih.vashchenko@gmail.com",
-    tel: "+38 (063) 550-25-22",
+    tel: "+38 (095) 550-25-22",
     address: "Ukraine, Kyiv",
     gitHub: "https://github.com/ih-v",
     site: "https://ih-v.github.io/resume/",
   },
   summary: [
     "Self-motivated and hard-working individual with strong analytical skills desires to work as a Front-end Web Developer.",
-    "Bringing 1year non-comercial programming experience in JavaScript, TypeScript, HTML, CSS/SCSS and proficiency in relevant packages such as React, Redux toolkit, Next.",
-    "Also has good knowledges in CSS frameworks - Material UI, Bootstrap, Styled Components; Unit testing - Vitest; backend and database technologies - Node, Nest, Express, MongoDB, Mongoose; other programming tools - Docker, Git.",
+    "Bringing more than 2 year of JavaScript programming experience (mainly React).",
+    "Also has good knowledges in popular CSS frameworks, testing, backend and database technologies and other programming tools - Git, CI/CD (GitHub Actions), Docker",
   ],
   skills: [
+    "JS/TS/HTML/CSS/SCSS",
     "React",
+    "Next",
     "TypeScript",
     "Redux toolkit",
-    "JS/TS/HTML/CSS/SCSS",
-    "Next",
     "Material UI",
     "Bootstrap",
+    "TailwindCSS",
     "Styled Components",
-    "MongoDB, Mongoose",
     "Node",
-    "Nest",
     "Express",
+    "Nest",
+    "MongoDB",
+    "Mongoose",
+    "PostgreSQL",
+    "Prisma",
+    "Vitest",
+    "Jest",
+    "Playwright",
     "Git",
+    "GitHub Actions",
     "Docker (compose)",
   ],
   keyProjects: [
     {
-      title: "Grant fund quality analysis application",
-      period: "12/2022 - 03/2023",
+      title: "Grant fund internal web services",
+      period: "01/2021 - 03/2024",
       position: "Developer",
       description:
-        "Developed a web-app for internal procedures for the grant fund (ensuring projects quality analysis). Used for frontend - React, React-Bootstrap, for bundling - Parcel, for data repository - Google Spreadsheets, deployed on Google App Script",
+        "Developed web applications for internal procedures of the grant fund - processing information about projects, applications, documents and generating statistical reports (used React, Next, Nest, MongoDB, PostgreSQL)",
+    },
+    {
+      title: "Transport ticket service",
+      period: "06/2023 - 07/2023",
+      position: "Developer",
+      description:
+        "Developed 2 adaptive landing pages for web mini games (used HTML and SCSS)",
     },
     {
       title: "Transport ticket service",
       period: "01/2022 - 03/2022",
       position: "Co-Developer",
       description:
-        "Continued development new components, refactoring code for hooks. Used - React, Redux, Next, Axios, SCSS",
-    },
-    {
-      title: "Grant fund application processing",
-      period: "10/2020 - 01/2021",
-      position: "Developer",
-      description:
-        "Developed web-app for processing information on applications to the grant fund (submission, editing, search). Used for frontend - HTML, JS, CSS (Bootstrap), for data repository - Google Spreadsheets, deployed on Google App Script",
+        "Continued development new components, refactoring code for hooks (used React, Redux, Next, Axios, SCSS)",
     },
   ],
   workExperience: [
@@ -59,7 +67,7 @@ export const data = {
       position:
         "Design engineer, Chief project engineer, Expert/Head of department in a state institution",
       description:
-        "Design of heating, ventilation, cooling, water and gas supply system, energy efficiency measures for industrial and civil buildings, transport infrastructure. Leading a group of designers",
+        "Design of heating, ventilation, cooling, water and gas supply system, energy efficiency measures for industrial and civil buildings, transport infrastructure. Leading a group of engineers",
     },
   ],
   courses: [
@@ -83,5 +91,5 @@ export const data = {
       description: "“Heat and gas supply and ventilation”",
     },
   ],
-  languages: ["Native Ukrainian", "Native Russian", "Intermediate English"],
+  languages: ["Native Ukrainian", "Intermediate English"],
 };

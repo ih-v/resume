@@ -13,55 +13,16 @@ import WorkExperience from "./WorkExperience";
 import Courses from "./Courses";
 import Education from "./Education";
 import Languages from "./Languages";
+import { usePDF } from "react-to-pdf";
 
 function App() {
-  const handleDownload = () => {
-    html2canvas(document.querySelector("#capture"), {
-      allowTaint: true,
-      scale: 3,
-    }).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF({
-        orientation: "portrait",
-      });
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("Ihor_Vashenko_resume.pdf");
-    });
-    /*     html2canvas(input)
-      .then((canvas) => {
-        const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF({
-          orientation: 'landscape',
-        });
-        const imgProps= pdf.getImageProperties(imgData);
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save('download.pdf');
-      }); */
-    /*     let doc = new jsPDF({
-      orientation: "portrait",
-      unit: "pt",
-      format: "a4",
-    });
-    doc.html(document.getElementById("content"), {
-      callback: function (doc) {
-        doc.save("file.pdf");
-      },
-      filename: "resume.pdf",
-      html2canvas: {
-        scale: 0.7, //this was my solution, you have to adjust to your size
-        width: 1000, //for some reason width does nothing
-      },
-    }); */
-  };
+  const { toPDF, targetRef } = usePDF({ filename: "resume.pdf" });
+
+  const handleDownload = () => toPDF();
 
   return (
     <main className="main">
-      <div id="capture" className="content">
+      <div ref={targetRef} id="capture" className="content">
         <Head
           fullName={data.fullName}
           position={data.position}

@@ -1,6 +1,6 @@
 import s from "./Head.module.scss";
-import { MdAlternateEmail, MdPhone, MdLocationOn } from "react-icons/md/";
-import { BsGithub, BsBrowserChrome } from "react-icons/bs/";
+import { MdAlternateEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { BsGithub, BsBrowserChrome } from "react-icons/bs";
 
 const Head = ({ fullName, position, photo, contacts }) => {
   return (

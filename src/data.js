@@ -46,7 +46,7 @@ export const data = {
         "Developed web applications for internal procedures of the grant fund - processing information about projects, applications, documents and generating statistical reports (used React, Next, Nest, MongoDB, PostgreSQL)",
     },
     {
-      title: "Transport ticket service",
+      title: "Landings",
       period: "06/2023 - 07/2023",
       position: "Developer",
       description:
